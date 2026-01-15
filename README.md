@@ -67,7 +67,7 @@ This project demonstrates strong fundamentals in **DOM manipulation**, **game lo
 
 1. Clone the repository
    ```bash
-   git clone <your-repo-url>
+   git clone <https://github.com/Siddharth-Singh-28/TicTacToe>
 
 └── sounds/
 ├── click.wav
