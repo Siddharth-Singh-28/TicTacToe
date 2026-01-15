@@ -1,0 +1,78 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page setup */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f172a;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e5e7eb;
+}
+
+/* Main container */
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    background-color: #1e293b;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Cells */
+.cell {
+    background-color: #0f172a;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #334155;
+}
+
+/* Status text */
+.status {
+    font-size: 1.1rem;
+}
+
+/* Button */
+.restart-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #0f172a;
+    font-weight: bold;
+}
+
+.restart-btn:hover {
+    background-color: #0ea5e9;
+}
+
+.cell.win {
+    background-color: #22c55e; /* green highlight */
+    color: #0f172a;
+}
